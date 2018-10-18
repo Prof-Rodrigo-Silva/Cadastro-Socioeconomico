@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corfundo"
+    tools:context=".Cadastrar">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="CADASTRO SOCIOECONÔMICO"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView14"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Dados do Entrevistado:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNomeEntrevistado"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView15"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Nome do entrevistado"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/eTEnderecoEntrevistado"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNomeEntrevistado"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Endereço do entrevistado"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/eTTelefoneEntrevistado"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTEnderecoEntrevistado"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Número Telefone Entrevistado"
+                android:inputType="phone"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTTelefoneEntrevistado"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Sexo:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView16"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnSexoMasc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnSexoFem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnSexoOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView14"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="Posição do entrevistado:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPosicaoEntrevistado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView17"
+                android:layout_marginLeft="200dp"
+                android:layout_toRightOf="@id/textView15">
+
+                <RadioButton
+                    android:id="@+id/rBtnTitular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titular"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnConjuge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cônjuge"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnInquilino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inquilino"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnMorador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Morador"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnPosicaoOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView14"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView17"
+                android:text="Estado Civil:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupEstadoCivil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView18"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/textView17">
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoCivilCasado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casado"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoCivilUniaoEstavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="União Estável"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoCivilDivorciado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Divorciado"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoCivilSolteiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solteiro"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoCivilViuvo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viúvo"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView14"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView18"
+                android:text="Utilização do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupUtilizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView19"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/textView18">
+
+                <RadioButton
+                    android:id="@+id/rBtnUtilizacaoMoradiaPropria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Moradia Própria"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnUtilizacaoAlugadaMoradia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alugada para Moradia"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnUtilizacaoAlugadaComercio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alugada Comercio"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnUtilizacaoComercio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comercio"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnUtilizacaoMista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mista"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupSexo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Nome do Titular:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNomeTitular"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView23"
+                android:layout_marginLeft="15dp"
+                android:ems="10"
+                android:hint="Nome Titular"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNomeTitular"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Data de Nascimento:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTDataNascimentoTitular"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNomeTitular"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView20"
+                android:ems="10"
+                android:hint="Data de nascimento"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView20"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="CPF:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTCPFTitular"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTDataNascimentoTitular"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView21"
+                android:ems="10"
+                android:hint="CPF Titular"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView21"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:text="IDT:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTIDTTitular"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTCPFTitular"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView21"
+                android:ems="10"
+                android:hint="Identidade Titular"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupSexo"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="Nome do Cônjuge:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNomeConjuge"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView24"
+                android:layout_marginLeft="200dp"
+                android:layout_toRightOf="@id/textView15"
+                android:ems="10"
+                android:hint="Nome Cônjuge"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNomeConjuge"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="Data de Nascimento:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTDataNascimentoConjuge"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView25"
+                android:layout_toRightOf="@+id/textView25"
+                android:ems="10"
+                android:hint="Data de nascimento"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView25"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="CPF:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTCPFConjuge"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTDataNascimentoConjuge"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView26"
+                android:ems="10"
+                android:hint="CPF Cônjuge"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView26"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="IDT:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTIDTConjuge"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTCPFConjuge"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView27"
+                android:ems="10"
+                android:hint="Identidade Conjuge"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/radioGroupSexo"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView18"
+                android:text="Condição do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupCondicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView28"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/textView18">
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoPropria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Própria"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoAlugada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alugada"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoCedida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cedida"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoEmprestada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emprestada"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoComodato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comodato"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnCondicaoOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTIDTTitular"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Profissão:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTProfissaoTitular"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTIDTTitular"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView29"
+                android:ems="10"
+                android:hint="Profissão Titular"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTIDTConjuge"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="Profissão:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTProfissaoConjuge"
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTIDTConjuge"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView30"
+                android:ems="10"
+                android:hint="Profissão Cônjuge"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTProfissaoTitular"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Naturalidade:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNaturalidadeTitular"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTProfissaoTitular"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView31"
+                android:ems="10"
+                android:hint="Naturalidade Titular"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eTProfissaoConjuge"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView15"
+                android:text="Naturalidade:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNaturalidadeConjuge"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTProfissaoConjuge"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView32"
+                android:ems="10"
+                android:hint="Naturalidade Cônjuge"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eTNaturalidadeConjuge"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="INFORMAÇÕES GERAIS"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView33"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Endereço Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTEnderecoImovel"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView33"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView34"
+                android:ems="10"
+                android:hint="Endereço Imóvel"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView33"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/eTEnderecoImovel"
+                android:text="Endereço Titular:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTEnderecoTitular"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView33"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textView35"
+                android:ems="10"
+                android:hint="Endereço Titular"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Único proprietário:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupUnicoProprietario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView36"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnUnicoProprietarioSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnUnicoProprietarioNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/radioGroupUnicoProprietario"
+                android:text="Possui Outros Imóveis:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupOutrosImoveis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView37"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnOutroImoveisSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnOutroImoveisNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/radioGroupOutrosImoveis"
+                android:text="Cônjuge Ajudou na Construção:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupConjugeAjudou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView34"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView38"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnConjugeAjudouSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnConjugeAjudouNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView36"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Endereço Outro Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTEnderecoOutroImovel"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView36"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView39"
+                android:ems="10"
+                android:hint="Endereço Outro Imóvel"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView36"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/eTEnderecoOutroImovel"
+                android:text="Tempo de Cônjuge:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTTempodeConjuge"
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView36"
+                android:layout_marginTop="21dp"
+                android:layout_toRightOf="@id/textView40"
+                android:ems="10"
+                android:hint="Tempo de Cônjuge"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Trabalha:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSeTrabalha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView41"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnSeTrabalhaSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnSetrabalhaNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/radioGroupSeTrabalha"
+                android:text="Formal/Informal:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupFormalInformal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView42"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnFormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formal"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnInformal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informal"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@id/radioGroupFormalInformal"
+                android:text="Serve a outras Familias:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupServeOutrasFamilias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView40"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView43"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnServeOutrasFamiliasSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnServeOutrasFamiliasNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Principal Fonte de Renda:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTPrincipalFonteRenda"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView44"
+                android:ems="10"
+                android:hint="Principal Fonte de Renda"
+                android:inputType="text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/eTPrincipalFonteRenda"
+                android:text="Número de Filhos:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroFilhos"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView45"
+                android:ems="10"
+                android:hint="Número de Filhos"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/eTNumeroFilhos"
+                android:text="Número de Moradores:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroMoradores"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView41"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView46"
+                android:ems="10"
+                android:hint="Número de Moradores"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView44"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Número de Proprietários:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroProprietarios"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView44"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView47"
+                android:ems="10"
+                android:hint="Número de Proprietários"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView47"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Número de Imóveis:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroImoveis"
+                android:layout_width="232dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView47"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView48"
+                android:ems="10"
+                android:hint="Número de Imóveis"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView48"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Portador de Necessidades Especiais:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPortadorNecessidadesEspeciais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView48"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/textView49"
+                android:orientation="horizontal"
+                android:textColor="@color/colorPrimaryDark">
+
+                <RadioButton
+                    android:id="@+id/rBtnPortadorNecessidadesEspeciaisSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnPortadorNecessidadesEspeciaisNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView45"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/eTNumeroProprietarios"
+                android:text="Renda Familiar:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupRendaFamiliar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView50"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/eTNumeroProprietarios">
+
+                <RadioButton
+                    android:id="@+id/rBtnRendaFamiliarSemRenda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sem Renda"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnRendaFamiliarAte1Salario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Até 1 Salário Mínimo"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnRendaFamiliar2A3Salarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="De 2 a 3 Salários Mínimos"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnRendaFamiliar3A4Salarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="De 3 a 4 Salários Mínimos"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnRendaFamiliarMaisDe5Salarios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mais de 5 Salários Mínimos"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupRendaFamiliar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="CARACTERÍSTICAS DO IMÓVEL"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Número de Cômodos:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroComodos"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView52"
+                android:ems="10"
+                android:hint="Número de Cômodos"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/eTNumeroComodos"
+                android:text="Número de Cômodos:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroPavimentos"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView53"
+                android:ems="10"
+                android:hint="Número de Pavimentos"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/eTNumeroPavimentos"
+                android:text="Número de Banheiro:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/eTNumeroBanheiro"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView51"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/textView54"
+                android:ems="10"
+                android:hint="Número de Banheiros"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView52"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Tipologia do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTipologia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView55"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/rBtnTipologiaCasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Casa"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipologiaSobrado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sobrado"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipologiaApartamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apartamento"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipologiaOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView52"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/textView55"
+                android:text="Estado do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupEstadoImovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView56"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/textView55">
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoImovelMuitoBom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muito Bom"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoImovelBom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bom"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoImovelRazoavel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Razoável"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnEstadoImovelRuim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruim"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView52"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/textView56"
+                android:text="Tipo do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTipoImovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView57"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/textView56">
+
+                <RadioButton
+                    android:id="@+id/rBtnTipoImovelAlvenaria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alvenaria"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipoImovelMadeira"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Madeira"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipoImovelMista"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mista"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnTipoImovelOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView52"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/textView57"
+                android:text="Posição do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPosicaoImovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView58"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/textView57">
+
+                <RadioButton
+                    android:id="@+id/rBtnPosicaoImovelFrente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frente"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnPosicaoImovelFundos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fundos"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnPosicaoImovelEncravado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encravado"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnPosicaoImovelOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView52"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="33dp"
+                android:layout_toRightOf="@+id/textView58"
+                android:text="Aquisição do Imóvel:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAquisicaoImovel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView59"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/textView58">
+
+                <RadioButton
+                    android:id="@+id/rBtnAquisicaoImovelRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registro de Imóveis"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnAquisicaoImovelTranslado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Translado"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnAquisicaoImovelContrado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contrato Compa e Venda"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnAquisicaoImovelDoacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doacao"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnAquisicaoImovelOutro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Outro"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupAquisicaoImovel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Proprietário do Terreno:"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupProprietarioTerreno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupAquisicaoImovel"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/textView60"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rBtnProprietarioTerrenoSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <RadioButton
+                    android:id="@+id/rBtnProprietarioTerrenoNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:textColor="@color/colorPrimaryDark" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnCadastroSocioeconomico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroupProprietarioTerreno"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Cadastrar" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
